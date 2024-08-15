@@ -1,12 +1,12 @@
 ---
-- name: Collect Cisco Switches IOS Facts
-  hosts: switches
+- name: Test IOS Facts
+  hosts: routers
   tasks:
-     var: ansible_facts
-    - name: All Switches Facts
+    - debug:
+        var: ansible_facts
+
+    - name: Gather IOS Facts 02
       ios_facts:
-        gather_subnet: all
-      register: all
-    - name: Print All
-      debug:
-        var: all
+        gather_subset: all
+      register: all_subset
+
