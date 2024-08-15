@@ -1,3 +1,5 @@
+- task:
+  hosts: switches
 - name: Gather all legacy facts
   cisco.ios.ios_facts:
     gather_subset: all
