@@ -4,5 +4,8 @@
   tasks:
     - name: All Switches Facts
       ios_facts:
-        gather_subnet:
-        - all
+        gather_subnet: all
+      register: all
+    - name: Print All
+      debug:
+        var: all
