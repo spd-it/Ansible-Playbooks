@@ -1,5 +1,9 @@
-- task:
+- name: Test IOS Facts
   hosts: switches
+  tasks:
+    - debug:
+        var: ansible_facts
+        
 - name: Gather all legacy facts
   cisco.ios.ios_facts:
     gather_subset: all
