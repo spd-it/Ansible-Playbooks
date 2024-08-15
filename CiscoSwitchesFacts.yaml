@@ -2,6 +2,7 @@
 - name: Collect Cisco Switches IOS Facts
   hosts: switches
   tasks:
+     var: ansible_facts
     - name: All Switches Facts
       ios_facts:
         gather_subnet: all
