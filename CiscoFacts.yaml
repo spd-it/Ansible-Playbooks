@@ -4,13 +4,13 @@
     - debug:
         var: ansible_facts
         
-    - name: Gather all legacy facts
-         gather_subset: all
+- name: Gather all legacy facts
+     gather_subset: all
 
-    - name: Gather only the config and default facts
-         gather_subset:
-              - config
+- name: Gather only the config and default facts
+     gather_subset:
+          - config
 
-    - name: Do not gather hardware facts
-         gather_subset:
-          - "!hardware"
+- name: Do not gather hardware facts
+     gather_subset:
+      - "!hardware"
