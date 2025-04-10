@@ -1,5 +1,5 @@
 ---
-- hosts: 
+- hosts: c29-msa-302-1.ghp.lc
   name: Find unused Cisco ports with exclusions and generate report
   hosts: cisco_switches
   gather_facts: no
