@@ -1,9 +1,3 @@
-Update Cisco_90_day_search.yaml
-f7719e4
- · 
-Apr 10, 2025
-
-115 lines (104 loc) · 4.85 KB
 ---
 - hosts: 
   name: Find unused Cisco ports with exclusions and generate report
