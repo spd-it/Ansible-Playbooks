@@ -9,7 +9,7 @@
 
   tasks:
     - name: Gather interface and VLAN information from Cisco devices
-      cisco.ios.ios_facts:
+      ios_facts:
         gather_subset:
           - interfaces
           - interfaces_vlan
